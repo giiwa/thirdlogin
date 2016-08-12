@@ -17,7 +17,7 @@ import org.giiwa.core.bean.X;
  * 
  */
 @Table(name = "tbldemo")
-public class Demo extends Bean {
+public class WxUser extends Bean {
 
   /**
    * 
@@ -56,7 +56,7 @@ public class Demo extends Bean {
       while (exists(id)) {
         id = "d" + UID.next("demo.id");
       }
-      Helper.insert(v.set(X._ID, id), Demo.class);
+      Helper.insert(v.set(X._ID, id), WxUser.class);
       return id;
     } catch (Exception e1) {
       log.error(e1.getMessage(), e1);
@@ -66,7 +66,7 @@ public class Demo extends Bean {
 
   public static boolean exists(String id) {
     try {
-      return Helper.exists(id, Demo.class);
+      return Helper.exists(id, WxUser.class);
     } catch (Exception e1) {
       log.error(e1.getMessage(), e1);
     }
@@ -74,19 +74,19 @@ public class Demo extends Bean {
   }
 
   public static int update(String id, V v) {
-    return Helper.update(id, v, Demo.class);
+    return Helper.update(id, v, WxUser.class);
   }
 
-  public static Beans<Demo> load(W q, int s, int n) {
-    return Helper.load(q.sort(X._ID, 1), s, n, Demo.class);
+  public static Beans<WxUser> load(W q, int s, int n) {
+    return Helper.load(q.sort(X._ID, 1), s, n, WxUser.class);
   }
 
-  public static Demo load(String id) {
-    return Helper.load(id, Demo.class);
+  public static WxUser load(String id) {
+    return Helper.load(id, WxUser.class);
   }
 
   public static void delete(String id) {
-    Helper.delete(id, Demo.class);
+    Helper.delete(id, WxUser.class);
   }
 
   public static void cleanup() {
