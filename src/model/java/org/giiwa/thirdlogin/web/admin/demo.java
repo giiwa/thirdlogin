@@ -2,12 +2,11 @@ package org.giiwa.thirdlogin.web.admin;
 
 import org.giiwa.core.bean.Beans;
 import org.giiwa.core.bean.X;
+import org.giiwa.core.json.JSON;
 import org.giiwa.core.bean.Helper.W;
 import org.giiwa.thirdlogin.bean.WxUser;
 import org.giiwa.framework.web.Model;
 import org.giiwa.framework.web.Path;
-
-import net.sf.json.JSONObject;
 
 public class demo extends Model {
 
@@ -33,7 +32,7 @@ public class demo extends Model {
   public void delete() {
     String id = this.getString("id");
     WxUser.delete(id);
-    JSONObject jo = new JSONObject();
+    JSON jo = new JSON();
     jo.put(X.STATE, 200);
     this.response(jo);
   }
