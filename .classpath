@@ -51,7 +51,6 @@
 	<classpathentry kind="lib" path="depends/mail-1.4.jar"/>
 	<classpathentry kind="lib" path="depends/qpid-amqp-1-0-client-jms-0.26.jar"/>
 	<classpathentry kind="lib" path="depends/httpasyncclient-4.1.jar"/>
-	<classpathentry kind="lib" path="depends/json-lib-2.4-jdk15.jar"/>
 	<classpathentry kind="lib" path="depends/commons-configuration-1.6.jar"/>
 	<classpathentry kind="lib" path="depends/langsorter-1.0.1.jar"/>
 	<classpathentry kind="lib" path="depends/commons-beanutils-1.8.0.jar"/>
