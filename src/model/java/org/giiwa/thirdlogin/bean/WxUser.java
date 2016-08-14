@@ -24,7 +24,7 @@ public class WxUser extends Bean {
    */
   private static final long serialVersionUID = 1L;
 
-  @Column(name = X._ID)
+  @Column(name = X.ID)
   String                    id;
 
   @Column(name = "name")
@@ -56,7 +56,7 @@ public class WxUser extends Bean {
       while (exists(id)) {
         id = "d" + UID.next("demo.id");
       }
-      Helper.insert(v.set(X._ID, id), WxUser.class);
+      Helper.insert(v.set(X.ID, id), WxUser.class);
       return id;
     } catch (Exception e1) {
       log.error(e1.getMessage(), e1);
@@ -78,7 +78,7 @@ public class WxUser extends Bean {
   }
 
   public static Beans<WxUser> load(W q, int s, int n) {
-    return Helper.load(q.sort(X._ID, 1), s, n, WxUser.class);
+    return Helper.load(q.sort(X.ID, 1), s, n, WxUser.class);
   }
 
   public static WxUser load(String id) {
