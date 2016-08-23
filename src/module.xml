@@ -4,7 +4,7 @@
   <id>12</id>
   <name>thirdlogin</name>
   <package>org.giiwa.thirdlogin.web</package>
-  <screenshot>/images/demo_screenshot.png</screenshot>
+  <screenshot>/images/thirdlogin_screenshot.png</screenshot>
   <version>1.0.1</version>
   <build>0</build>
   <enabled>true</enabled>
