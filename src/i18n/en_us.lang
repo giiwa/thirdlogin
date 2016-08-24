@@ -12,3 +12,7 @@ thirdlogin.sina=Sina
 thirdlogin.sina.hint=Using sina weibo account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
 thirdlogin.wechat=Wechat
 thirdlogin.wechat.hint=Using wechat account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.github.clientid=Client ID
+thirdlogin.github.clientid.hint=
+thirdlogin.github.secret=Client Secret
+thirdlogin.github.secret.hint=

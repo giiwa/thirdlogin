@@ -43,7 +43,7 @@
 	<a class='qq'></a>
 	#end
 	#if($global.getInt('thirdlogin.github.on', 0) == 1)
-	<a class='github' href=''></a>
+	<a class='github' href='https://github.com/login/oauth/authorize?client_id=$global.getString("thirdlogin.github.clientid", "")&redirect_uri=$global.getString("site.url","")/thirdlogin/github&scope=user'></a>
 	#end
 	#if($global.getInt('thirdlogin.wechat.on', 0) == 1)
 	<a class='wechat'></a>
