@@ -6,7 +6,7 @@
   <package>org.giiwa.thirdlogin.web</package>
   <screenshot>/images/thirdlogin_screenshot.png</screenshot>
   <version>1.0.1</version>
-  <build>1608231707</build>
+  <build>1608241133</build>
   <enabled>true</enabled>
   <readme>thirdlogin module</readme>
   <listener>

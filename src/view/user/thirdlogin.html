@@ -1,3 +1,51 @@
-<div class='thirdlogin'>
-	<a class='item'>aaaa</a>
+<style>
+.third-part{
+	margin-top: 10px;	
+}
+.third-part a{
+	display: inline-block;
+    background-image: url("/images/login-third-party.png");
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    width: 32px;
+    height: 32px;
+}
+.third-part .sina{
+	background-position: 0 0;
+}
+.third-part .linkin {
+    background-position: -37px 0;
+}
+.third-part .baidu {
+    background-position: -74px 0;
+}
+.third-part .qq {
+    background-position: -112px 0;
+}
+.third-part .github {
+    background-position: -186px 0;
+}
+.third-part .wechat {
+    background-position: -224px 0;
+}
+</style>
+<div class='third-part'>
+	#if($global.getInt('thirdlogin.sina.on', 0) == 1)
+	<a class='sina'></a>
+	#end
+	#if($global.getInt('thirdlogin.linkin.on', 0) == 1)
+	<a class='linkin'></a>
+	#end
+	#if($global.getInt('thirdlogin.baidu.on', 0) == 1)
+	<a class='baidu'></a>
+	#end
+	#if($global.getInt('thirdlogin.qq.on', 0) == 1)
+	<a class='qq'></a>
+	#end
+	#if($global.getInt('thirdlogin.github.on', 0) == 1)
+	<a class='github' href=''></a>
+	#end
+	#if($global.getInt('thirdlogin.wechat.on', 0) == 1)
+	<a class='wechat'></a>
+	#end
 </div>

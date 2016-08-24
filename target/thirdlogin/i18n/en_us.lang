@@ -1,1 +1,14 @@
-menu.thirdlogin=ThirdLogin
+a.setting.thirdlogin=ThirdLogin
+thirdlogin.baidu=Baidu
+thirdlogin.baidu.hint=Using baidu account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.github=Github
+thirdlogin.github.hint=Using Github account login, <a href='https://github.com/settings/applications/' target='_blank'>https://github.com/settings/applications/</a>
+thirdlogin.linkin=Linkin
+thirdlogin.linkin.hint=Using Linkin account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.qq=QQ
+thirdlogin.qq.hint=Using QQ account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.setting.title=ThirdLogin Setting
+thirdlogin.sina=Sina
+thirdlogin.sina.hint=Using sina weibo account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.wechat=Wechat
+thirdlogin.wechat.hint=Using wechat account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>

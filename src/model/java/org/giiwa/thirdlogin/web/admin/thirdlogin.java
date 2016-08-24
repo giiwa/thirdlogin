@@ -1,26 +1,26 @@
 package org.giiwa.thirdlogin.web.admin;
 
+import org.giiwa.app.web.admin.setting;
 import org.giiwa.core.bean.X;
-import org.giiwa.core.bean.Helper.W;
-import org.giiwa.framework.web.Model;
-import org.giiwa.framework.web.Path;
+import org.giiwa.core.conf.Global;
 
-public class thirdlogin extends Model {
+public class thirdlogin extends setting {
 
-  @Path(login = true, access = "access.config.admin")
-  public void onGet() {
-    int s = this.getInt("s");
-    int n = this.getInt("n", 20, "number.per.page");
+  @Override
+  public void get() {
+    this.set("page", "/admin/setting.thirdlogin.html");
+  }
 
-    W q = W.create();
-    String name = this.getString("name");
-
-    if (!X.isEmpty(name) && path == null) {
-      q.and("name", name, W.OP_LIKE);
-      this.set("name", name);
-    }
-
-    this.show("/admin/thirdlogin.index.html");
+  @Override
+  public void set() {
+    Global.setConfig("thirdlogin.baidu.on", X.isSame("on", this.getString("baidu_on")) ? 1 : 0);
+    Global.setConfig("thirdlogin.sina.on", X.isSame("on", this.getString("sina_on")) ? 1 : 0);
+    Global.setConfig("thirdlogin.linkin.on", X.isSame("on", this.getString("linkin_on")) ? 1 : 0);
+    Global.setConfig("thirdlogin.qq.on", X.isSame("on", this.getString("qq_on")) ? 1 : 0);
+    Global.setConfig("thirdlogin.github.on", X.isSame("on", this.getString("github_on")) ? 1 : 0);
+    Global.setConfig("thirdlogin.wechat.on", X.isSame("on", this.getString("wechat_on")) ? 1 : 0);
+    
+    get();
   }
 
 }
