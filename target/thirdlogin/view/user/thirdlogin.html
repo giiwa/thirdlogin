@@ -16,9 +16,6 @@
 .third-part .linkin {
     background-position: -37px 0;
 }
-.third-part .baidu {
-    background-position: -74px 0;
-}
 .third-part .qq {
     background-position: -112px 0;
 }
@@ -31,21 +28,15 @@
 </style>
 <div class='third-part'>
 	#if($global.getInt('thirdlogin.sina.on', 0) == 1)
-	<a class='sina'></a>
-	#end
-	#if($global.getInt('thirdlogin.linkin.on', 0) == 1)
-	<a class='linkin'></a>
-	#end
-	#if($global.getInt('thirdlogin.baidu.on', 0) == 1)
-	<a class='baidu'></a>
+	<a class='sina' href="https://api.weibo.com/oauth2/authorize?client_id=$global.getString('thirdlogin.sina.appkey', '')&redirect_uri=$global.getString('site.url','')/thirdlogin/sina"></a>
 	#end
 	#if($global.getInt('thirdlogin.qq.on', 0) == 1)
 	<a class='qq'></a>
 	#end
 	#if($global.getInt('thirdlogin.github.on', 0) == 1)
-	<a class='github' href='https://github.com/login/oauth/authorize?client_id=$global.getString("thirdlogin.github.clientid", "")&redirect_uri=$global.getString("site.url","")/thirdlogin/github&scope=user'></a>
+	<a class='github' href="https://github.com/login/oauth/authorize?client_id=$global.getString('thirdlogin.github.clientid', '')&redirect_uri=$global.getString('site.url','')/thirdlogin/github&scope=user"></a>
 	#end
 	#if($global.getInt('thirdlogin.wechat.on', 0) == 1)
-	<a class='wechat'></a>
+	<a class='wechat' href="https://open.weixin.qq.com/connect/qrconnect?appid=$global.getString('thirdlogin.wechat.appid','')&redirect_uri=$global.getString('site.url','')/thirdlogin/wechat&response_type=code&scope=snsapi_login,snsapi_userinfo"></a>
 	#end
 </div>

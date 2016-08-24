@@ -1,18 +1,24 @@
 a.setting.thirdlogin=第三方登录
-thirdlogin.baidu=百度账号
-thirdlogin.baidu.hint=使用百度账号登录，<a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
 thirdlogin.github=Github账号
 thirdlogin.github.hint=使用Github账号登录，<a href='https://github.com/settings/applications/' target='_blank'>https://github.com/settings/applications/</a>
-thirdlogin.linkin=Linkin账号
-thirdlogin.linkin.hint=使用Linkin账号登录，<a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.linkin=Linkedin账号
+thirdlogin.linkin.hint=使用Linkedin账号登录，<a href='https://www.linkedin.com/developer/apps' target='_blank'>https://www.linkedin.com/developer/apps</a>
 thirdlogin.qq=QQ登录
 thirdlogin.qq.hint=使用QQ账号登录，<a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
 thirdlogin.setting.title=第三方登录设置
 thirdlogin.sina=新浪微博账号
-thirdlogin.sina.hint=使用新浪微博登录，<a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
+thirdlogin.sina.hint=使用新浪微博登录，<a href='http://open.weibo.com/' target='_blank'>http://open.weibo.com/</a>
 thirdlogin.wechat=微信登录
 thirdlogin.wechat.hint=使用微信登录，<a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
 thirdlogin.github.clientid=Client ID
 thirdlogin.github.clientid.hint=
 thirdlogin.github.secret=Client Secret
 thirdlogin.github.secret.hint=
+thirdlogin.wechat.appid=AppID
+thirdlogin.wechat.appid.hint=
+thirdlogin.wechat.secret=AppSecret
+thirdlogin.wechat.secret.hint=
+thirdlogin.sina.appid.hint=
+thirdlogin.sina.appkey=App Key
+thirdlogin.sina.secret=App Sercet
+thirdlogin.sina.secret.hint=

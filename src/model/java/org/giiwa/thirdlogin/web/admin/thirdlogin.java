@@ -19,10 +19,16 @@ public class thirdlogin extends setting {
     Global.setConfig("thirdlogin.qq.on", X.isSame("on", this.getString("qq_on")) ? 1 : 0);
     Global.setConfig("thirdlogin.github.on", X.isSame("on", this.getString("github_on")) ? 1 : 0);
     Global.setConfig("thirdlogin.wechat.on", X.isSame("on", this.getString("wechat_on")) ? 1 : 0);
-    
+
     Global.setConfig("thirdlogin.github.clientid", this.getString("github_clientid"));
     Global.setConfig("thirdlogin.github.secret", this.getString("github_secret"));
-    
+
+    Global.setConfig("thirdlogin.wechat.appid", this.getString("wechat_appid"));
+    Global.setConfig("thirdlogin.wechat.secret", this.getString("wechat_secret"));
+
+    Global.setConfig("thirdlogin.sina.appkey", this.getString("sina_appkey"));
+    Global.setConfig("thirdlogin.sina.secret", this.getString("sina_secret"));
+
     get();
   }
 
