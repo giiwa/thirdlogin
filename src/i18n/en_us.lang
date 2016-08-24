@@ -1,8 +1,6 @@
 a.setting.thirdlogin=ThirdLogin
 thirdlogin.github=Github
 thirdlogin.github.hint=Using Github account login, <a href='https://github.com/settings/applications/' target='_blank'>https://github.com/settings/applications/</a>
-thirdlogin.qq=QQ
-thirdlogin.qq.hint=Using QQ account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>
 thirdlogin.setting.title=ThirdLogin Setting
 thirdlogin.sina=Sina
 thirdlogin.sina.hint=Using sina weibo account login, <a href='https://open.weixin.qq.com/' target='_blank'>https://open.weixin.qq.com/</a>

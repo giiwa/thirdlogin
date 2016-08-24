@@ -29,6 +29,9 @@ public class thirdlogin extends setting {
     Global.setConfig("thirdlogin.sina.appkey", this.getString("sina_appkey"));
     Global.setConfig("thirdlogin.sina.secret", this.getString("sina_secret"));
 
+    Global.setConfig("thirdlogin.qq.appid", this.getString("qq_appid"));
+    Global.setConfig("thirdlogin.qq.appkey", this.getString("qq_appkey"));
+
     get();
   }
 
